@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<!-- ERROR 3.1.1 Idioma de la pagina (la pagina no té un idioma predeterminat asociat) -->
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- ERROR 2.4.2 Página titulada (El titol de la pàgina no dona una descripcio del contingut de la pagina) -->
+    <title>Venda d'Art Infantil</title>
+    <link rel="icon" href="logo.png" type="image/png">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <section id="informacio">
+            <!-- ERROR 2.4.6 Encabezados y etiquetas (hi ha un h4 abans que un h1) -->
+            <h4>Benvolgut a la nostra pàgina web</h4>
+            <h1>Venda d'Art Infantil per la Caritat</h1>
+
+            <!-- 
+                - ERROR 1.4.1 Empleo del color (el link té el mateix color que el text)
+                - ERROR 2.4.4 Propósito de los enlaces (posa "click aqui" pero no et dona context de a on anirás) 
+            -->
+            <p>Per a més informació fes <a calss="link_mal" href="#" style="text-decoration: none; color: black;">click aqui</a></p>
+
+        </section>
+
+        <section id="galeria">
+            <!-- ERROR 3.1.4 Abrebiaturas (Hi ha dues abreebiatures en un titol de contingut) -->
+            <h2>Gal Imgs</h2>
+            <div class="imatges">
+                <img src="sasque.jpg" alt="Dibuix del personatge sasuke de la popular serie Naruto">
+                <img src="kachow.jpg" alt="ka chow!">
+                <img src="buzz.jpg" alt="Dibuix de buzz lightyear dient la seva mitica frase">
+            </div>
+        </section>
+
+        <section id="ofertes">
+            <h2>Ofertes</h2>
+            <!-- ERROR 2.2.2 Pausar, Parar, Ocultar (la etiqueta marquee no te manera de parar la animacio que té. Tampoc hi ha boto per amgar-la) -->
+            <div class="banner">
+                <!-- ERROR 3.2.2 Cambios imprevistos (la etiqueta marquee pot ser que provoqui canvis no dessitjats en la pagina) -->
+                <marquee>¡Oferta especial por tiempo limitado! ¡Oferta especial por tiempo limitado! ¡Oferta especial por tiempo limitado! ¡Oferta especial por tiempo limitado! ¡Oferta especial por tiempo limitado! </marquee>
+            </div>
+            <p>Oferta especial: 20% de descompte!</p>
+            <!-- ERROR 1.4.4 Variar el tamaño del texto (text que té el font size amb px fent que en pantalles grans no es llegeixi bé) -->
+            <p style="color: red; font-size: 10px;">Aquesta oferta només és vàlida fins a esgotar existències.</p>
+            <!-- ERROR 2.3.1 Tres destellos o por debajo del umbral (text repetitiu que ocupa gran espai en la pantalla i que parpadeja massa ràpid)-->
+            <p id="flashing" style="color: red;">OFERTA OFERTA OFERTA OFERTA OFERTA OFERTA OFERTA OFERTA OFERTA OFERTA OFERTA OFERTA OFERTA OFERTA OFERTA OFERTA OFERTA OFERTA OFERTA OFERTA OFERTA OFERTA OFERTA OFERTA OFERTA OFERTA OFERTA OFERTA OFERTA OFERTA OFERTA OFERTA OFERTA OFERTA OFERTA OFERTA OFERTA OFERTA OFERTA OFERTA OFERTA OFERTA </p>
+            <!-- ERROR 1.4.3 Contraste minimo (el color del text no té un bon contraste amb el fons) -->
+            <p style="color: #b0b0b0;">Les ofertes poden variar en relacio a quants compradors vulguin el mateix quadre.</p>
+            <h3>Promocions Especials</h3>
+            <ul>
+                <li>Entrada gratuïta als tallers.</li>
+                <li>Obsequi artesanal per als primers 50 visitants.</li>
+                <li>Personalització gratuïta del quadre.</li>
+                <li></li> 
+            </ul>
+        </section>
+
+        <section id="ubi">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m17!1m11!1m3!1d219.5845527580823!2d-4.060773!3d37.6430333!2m2!1f359.9!2f2.98!3m2!1i1024!2i768!4f35!3m3!1m2!1s0xd6dc0aff8452e15%3A0xc4120c403735ee9a!2s23669%20Venta%20de%20Pantalones%2C%20Ja%C3%A9n!5e1!3m2!1ses!2ses!4v1742730848175!5m2!1ses!2ses" width="100%" height="750" style="border:0;" allowfullscreen loading="lazy"></iframe>
+        </section>
+
+        <section id="contacte">
+            <!-- ERROR 1.4.9 Imégenes de texto (Imatge que conté només text que podria ser una etiqueta h2) -->
+            <img src="Sin título-1.png" alt="">
+            
+            <!-- ERROR 3.3.1 Identificación de erorres (el formulari no té ninguna validació [visual o auditiva] sobre els possibles errors a l'hora de l'inserció de dades) -->
+            <form action="#" method="post">
+                <label for="nom">El teu nom</label>
+                <input type="text" name="nom" required>
+
+                <!-- ERROR 3.3.2 Etiquetas o instrucciones (tot i estar ben utilitzades les etiquetes falta un exemple o instrucions sobre com posar la informacio [no saps com posar el correu]) -->
+                <label for="email">El teu correu</label>
+                <input type="email" name="email" required>
+
+                <textarea name="missatge" placeholder="El teu missatge"></textarea>
+                <!-- ERROR 2.4.7 Foco visible (el boto no te un estil "focus" suficienment clar per als usuaris de teclat) -->
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+
+        <footer>
+            <p>© 2025 Venda d'Art Infantil | Contacte: info@vendaart.cat</p>
+
+            <div class="infocont">
+                <h3>Info contacte</h3>
+                <p class="info">
+                    <strong>Adreça:</strong> Plaça de la Vila, 08080 Barcelona<br>
+                    <strong>Telèfon:</strong> 93 123 45 67<br>
+                    <strong>Correu:</strong> correu@generic.com
+                </p>
+            </div>
+        </footer>
+    </main>
+
+    <!-- ERROR 1.3.2 Secuencia significativa (el menu esta despres que el contingut, fent que els usuaris amb teclat primer passin a través del contingut abans que el menu) -->
+    <nav class="sidebar">
+        <!-- ERROR 1.1 contenido no textual (falta text en elalt)-->
+        <img src="logo.png" alt="" class="logo">
+
+        <!-- ERROR 1.3.1 informacion y relaciones (etiqueta span per fer un titol, falta la etiqueta h2)-->
+        <span>InfArt</span>
+
+        <ul>
+            <li><a href="#informacio">Informació</a></li>
+            <li><a href="#galeria">Galeria</a></li>
+            <li><a href="#preus">Preus</a></li>
+            <li><a href="#contacte">Contacte</a></li>
+        </ul>
+    </nav>
+</body>
+</html>
